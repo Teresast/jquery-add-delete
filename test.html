@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Jquery添加文本框并取得值 </title>
+ <script type="text/javascript" src="jquery.js"> </script>
+ <script type="text/javascript">
+        function add() {
+            for (var i = 0; i < 3; ++i)  //要循环的文本框个数;
+           $("#txt").append(" <input id='" + i + "' type='text' />"); //向ID为TXT的DIV追加文本框
+           $("#txt").append(" <input type='button' onclick='btnOK()' value='sure'/>");//追加确定按钮
+        }
+        function btnOK() {
+            alert($("#1").val()); //获得第二个文本的值；
+        }
+
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <input type="button" value="add" onclick="add()" />
+    <div id="txt">
+
+    </div>
+
+    </form>
+</body>
+</html>
+ 
