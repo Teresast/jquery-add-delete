@@ -1,6 +1,5 @@
  add_delete_jquery =
 {
-
     addElements:function (value){
         var newItem = $("<div></div>").text(value).addClass("inputTxt");
         var deleteButton = $("<input></input>").addClass("delete").attr("type","image").attr("src","pic/delete2.jpg");
@@ -24,7 +23,6 @@
            var item = $("#info").val();
            this.addElements(item);
            this.deleteItem();
-
        });
    }
 };
